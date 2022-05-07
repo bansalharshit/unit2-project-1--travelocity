@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+<link rel="stylesheet" href="Payment.css">
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div id="one">
+        <div id="two">
+          <div>
+            <a href="index.html"
+              ><img
+                src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&siteid=80001&2"
+                alt="logo"
+            /></a>
+          </div>
+          <div>
+            <a href="index.html"><img src="" alt="" /></a>
+          </div>
+        </div>
+        <div id="three">
+          <select name="" id="four">
+            <option value="none" id="a"><a href="#">More travel</a></option>
+            <option value="packages" id="a"><a href="#">Bags</a></option>
+            <option value="stays" id="a"><a href="#">Stays</a></option>
+            <option value="cars" id="a"><a href="#">Cars</a></option>
+            <option value="flights" id="a"><a href="#">Flights</a></option>
+          </select>
+        </div>
+        <div id="all">
+          <div id="five">
+            <div><a href="abou.html">About-Us</a></div>
+          </div>
+          <div id="six">
+            <div><a href="hotel.html">Trips & Hotels</a></div>
+          </div>
+          <div id="seven">
+            <div><a href="reserve.html">Bookings</a></div>
+          </div>
+          <div id="eight">
+            <div><a href="signin.html">Sign-in</a></div>
+          </div>
+        </div>
+      </div>
+    <!-- website logo  -->
+    <div id="logo">
+        <img src="https://www.travelocity.com/_dms/interstitial/logo.svg?locale=en_US&siteid=80001" alt="">
+    </div>
+    <!-- form start  -->
+    <div class="container" id="praveen">
+        <form action="" id="praveen2">
+        <div class="row">
+<div class="col" id="praveen1">
+    <h3 class="title">billing address</h3>
+    <div class="inputbox">
+        <span>full name :</span>
+        <input type="text" placeholder="Enter Your name here">
+
+    </div>
+    <div class="inputbox">
+        <span>email :</span>
+        <input type="email" placeholder="abc@gmail.com">
+    </div>
+<div class="inputbox">
+    <span>address : </span>
+    <input type="text" placeholder="Enter Your adress">
+</div>
+<div class="inputbox">
+    <span>city : </span>
+    <input type="text" placeholder="Enter Your City">
+</div>
+<div class="flex">
+    <div class="inputbox">
+        <span>state :</span>
+        <input type="text" placeholder="Enter Your state">
+    </div>
+    <div class="inputbox">
+        <span>Pincode :</span>
+        <input type="text" placeholder="Enter Your pincode">
+    </div>
+</div>
+</div>
+<div class="col">
+    <h3 class="title">Payment</h3>
+
+    <div class="inputbox">
+        <span>cards accepted :</span>
+        <img src="https://www.axisbank.com/images/default-source/default-album/ace-credit-card.jpg" alt="">
+    </div>
+
+    <div class="inputbox">
+        <span>name on card :</span>
+        <input type="text" placeholder="Enter the name on card">
+    </div>
+    
+<div class="inputbox">
+    <span>credit card number : </span>
+    <input type="text" placeholder="1234-5678-9101-1213">
+</div>
+<div class="inputbox">
+    <span>Enter Amount: </span>
+    <input type="text" id="thu" placeholder="Enter Amount">
+</div>
+<div class="flex">
+    <div class="inputbox">
+        <span>exp year :</span>
+        <input type="text" placeholder="exp year">
+    </div>
+    <div class="inputbox">
+        <span>cvv :</span>
+        <input type="text" placeholder="0123">
+    </div>
+</div>
+</div>
+        </div>
+        <input type="submit" value="proceed to chekcout" class="submit-button">
+    </form>
+    </div>
+    <!-- form end -->
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",myfunction);
+
+    function myfunction(){
+        event.preventDefault();
+        alert("💫 Paymet Successful 💫 \n 😊 Hope we feel you can enjoy the trip 😊")
+        window.location.href="index.html";
+    }
+
+</script>
+<script src="reserve.js"></script>
