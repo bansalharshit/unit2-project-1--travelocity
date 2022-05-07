@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>
+	Expedia Group 
+</title><meta content="text/html; charset=UTF-8" http-equiv="Content-type"><meta content="RevealTrans(Duration=0,Transition=0)" http-equiv="Page-Enter"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><script src="https://js-agent.newrelic.com/nr-1216.min.js"></script><script async="" src="/js/4797108222.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"4b6f7f959c","applicationID":"229922501","transactionName":"b1xWMUIDWBdWARFYX1YWdTZgTVIBUQMQXUQWWEcVSA==","queueTime":0,"applicationTime":691,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:false},ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VQYBUlRVChACVlhbBQMCVlU=",licenseKey:"4b6f7f959c",applicationID:"229922501"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(27),s={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,i.indexOf("dev")!==-1&&(s.dev=!0),i.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&o.on("internal-error",function(t){r(t.stack)}),s.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:i(s||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:c.now();o("err",[t,n])}var o=t("handle"),a=t(28),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!c.disabled){var p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(10),t(9),"addEventListener"in window&&t(6),c.xhrWrappable&&t(11),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){o("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function i(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+l])try{window.performance[h](m,i,!1)}catch(t){}else try{window.performance[h]("webkit"+m,i,!1)}catch(t){}}function o(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(10),f=t(9),u=t(5),d=t(19),l="learResourceTimings",p="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",S=t("loader");if(!S.disabled){S.features.stn=!0,t(8),"addEventListener"in window&&t(6);var O=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof O&&(this.bstStart=S.now())}),a.on(b,function(t,e){var n=t[0];n instanceof O&&s("bst",[n,e,this.bstStart,S.now()])}),c.on(x,function(t,e,n){this.bstStart=S.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),this.bstType])}),f.on(x,function(){this.bstStart=S.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=S.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):p in window.performance&&(window.performance["c"+l]?window.performance[p](m,i,d(!1)):window.performance[p]("webkit"+m,i,d(!1))),document[p]("scroll",o,d(!1)),document[p]("keypress",o,d(!1)),document[p]("click",o,d(!1))}}},{}],5:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){s.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return i.emit(n+"start",[t,a],s),s.then(function(t){return i.emit(n+"end",[null,t],s),t},function(t){throw i.emit(n+"end",[t],s),t})})}var i=t("ee").get("fetch"),o=t(28),a=t(27);e.exports=i;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),i.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(c+"done",[null,e],n)}else i.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],10:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(c+u,r),o.on(s+u,i)},{}],11:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function o(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,S.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=t(19),p=NREUM.o,h=p.XHR,m=p.MO,v=p.PR,w=p.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,i,l(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,S=document.createTextNode(R);new m(a).observe(S,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],12:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&l())&&(w.traceContextParentHeader=i(h,m),w.traceContextStateHeader=o(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",s=1,c="",f="";return i+"@nr="+o+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(s.d.tk=o),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(24),h=t(14);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],13:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);return e.protocol&&"data"===e.protocol?void g("Ajax/DataUrl/Excluded"):void(e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this)))}}function i(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function o(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(14),f=t(12).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(20),m=t(18),v=t(15),w=t(19),g=t(21).recordSupportability,y=NREUM.o.REQ,x=window.XMLHttpRequest;a.features.xhr=!0,t(11),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){o(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof x&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},o=this.target;if("string"==typeof o?n=o:"object"==typeof o&&o instanceof y?n=o.url:window.URL&&"object"==typeof o&&o instanceof URL&&(n=o.href),i(this,n),"data"!==this.params.protocol){var s=(""+(o&&o instanceof y&&o.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}}),u.on("fetch-done",function(t,e){if(this.endTime=a.now(),this.params||(this.params={}),"data"===this.params.protocol)return void g("Ajax/DataUrl/Excluded");this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],14:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||s),"/"===i.pathname&&(r[t]=i),i}},{}],15:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(18);e.exports=r},{}],16:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),o(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(27),s=t(28),c=t("ee").get("tracer"),f=t("loader"),u=t(21),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var l=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(l,function(t,e){d[e]=i(p,e,!0,"api")}),d.addPageAction=i(p,"addPageAction",!0),d.setCurrentRouteName=i(p,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),o("err",[t,f.now(),!1,e])}},{}],17:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],20:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],21:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[s,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:i}},{}],22:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,s=t(29);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],23:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;var i=[r],o=a({});o&&i.push(o),p("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function s(t){if(t instanceof w&&!y){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=h.now()?n.fid=h.now()-e:e>h.offset&&e<=Date.now()?(e-=h.offset,n.fid=h.now()-e):e=h.now(),y=!0,p("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=h.now(),p("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,d,l,p=t("handle"),h=t("loader"),m=t(26),v=t(19),w=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(g){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(g){}l=new PerformanceObserver(o);try{l.observe({type:"layout-shift",buffered:!0})}catch(g){}}if("addEventListener"in document){var y=!1,x=["click","keydown","mousedown","pointerdown","touchstart"];x.forEach(function(t){document.addEventListener(t,s,v(!1))})}m(c)}},{}],24:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<o.length;s++)i=o[s],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(t)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],25:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],26:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(19);e.exports=r;var o,a,s;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],27:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],28:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],29:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var s=e(i),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var l=d[y[n]];return l&&l.push([x,n,r,s]),s}}function o(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||i(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:o,addEventListener:o,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function o(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var c="nr@context",f=t("gos"),u=t(27),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!O++){var t=S.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+S.offset],null,"api"),s("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=p+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){s("mark",["domContent",a()+S.offset],null,"api")}var a=t(22),s=t("handle"),c=t(27),f=t("ee"),u=t(25),d=t(17),l=t(19),p=d.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!1;NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),S=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(16),t(23),m[v]?(m[v]("DOMContentLoaded",o,l(!1)),h[v]("load",r,l(!1))):(m[w]("onreadystatechange",i),h[w]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var O=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,c],u],t)}s(n+"start",[o,a,c],u,f);try{return l=e.apply(a,o)}catch(h){throw s(n+"err",[o,a,h],u,f),h}finally{s(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,i,c,o))}function s(n,r,o,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function s(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(28),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,13,4,3]);</script><meta content="width=device-width, initial-scale=1" name="viewport"><meta content="tVDXVv_yGmftJIX21LmdnzoHEgAj0Bqq4ssxBnwNgXY" name="google-site-verification"><meta content="W7pEQcQ4LAa-7LjkYm2i3nOvV7VYOnZWsc2sAM54LqY" name="google-site-verification"><meta content="8fWsGH2hMwaMcjF539BP7Ukjr-GmKaFGESa6oHEQ8Zw" name="google-site-verification"><!--[if lte IE 8]>
+<link id="respond-proxy" rel="respond-proxy" media="screen" href="//s27.q4cdn.com/708721433/files/js/respond-proxy.html" />
+<link id="respond-redirect" rel="respond-redirect" media="screen" href="https://www.expediagroup.com/js/respond.proxy.gif" />
+<![endif]-->
+<link rel="stylesheet" href="index.css">
+<link type="text/css" rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600">
+<link type="image/x-icon" rel="icon" media="" href="//s27.q4cdn.com/708721433/files/favicon.ico">
+<link type="image/x-icon" rel="shortcut icon" media="" href="//s27.q4cdn.com/708721433/files/favicon.ico">
+<link rel="stylesheet" media="print" href="//s27.q4cdn.com/708721433/files/css/print.css">
+<link id="htmlGlobalLinkCss" type="text/css" rel="stylesheet" media="all" href="//s27.q4cdn.com/708721433/files/css/global.css?v=39063"><link id="htmlClientLinkCss" type="text/css" rel="stylesheet" media="all" href="//s27.q4cdn.com/708721433/files/css/client.css?v=42513"><link id="htmlLinkPrintCss" type="text/css" rel="stylesheet" media="print" href="//s27.q4cdn.com/708721433/files/css/print.css"><script type="text/javascript" src="//s27.q4cdn.com/708721433/files/js/q4.core.1.1.0.min.js"></script>
+<script type="text/javascript" src="//s27.q4cdn.com/708721433/files/js/q4.app.1.1.7.min.js"></script>
+<script type="text/javascript" src="https://widgets.q4app.com/widgets/q4.api.1.13.5.min.js"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="https://www.expediagroup.com/js/respond.proxy.js"></script>
+<![endif]-->
+
+<meta name="Description" content="We believe travel is a force for good. When we power more travel, we unleash more opportunities to strengthen connections, broaden horizons and bridge"><script type="text/javascript">(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+(function ($) {
+    function initGaTracking(isp, org) {
+        console.log("inside ga tracking");
+        isp = isp || '(not set)';
+        org = org || '(not set)';
+        $.each(trackingCodes, function (i, data) {
+            if (data.qualifier === "Q4") {
+                ga('create', data.trackingCode, 'auto'); // Q4 tracker
+                ga('set', { 'dimension1': isp });
+                ga('set', { 'dimension2': org });
+                ga('set', 'anonymizeIp', true);
+                ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash }); // send pageview to Q4 tracker
+            } else {
+                ga('create', data.trackingCode, 'auto', { 'name': data.qualifier }); // Client tracker
+                ga(data.qualifier + '.set', 'anonymizeIp', true);
+                ga(data.qualifier + '.send', 'pageview', { 'page': location.pathname + location.search + location.hash }); // send pageview to Client tracker
+            }
+        });
+    }
+
+    function initBlizzard(isp, org) {
+        (function (p, l, o, w, i, n, g) { if (!p[i]) { p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || []; p.GlobalSnowplowNamespace.push(i); p[i] = function () { (p[i].q = p[i].q || []).push(arguments) }; p[i].q = p[i].q || []; n = l.createElement(o); g = l.getElementsByTagName(o)[0]; n.async = 1; n.src = w; g.parentNode.insertBefore(n, g) } }(window, document, "script", "/js/4797108222.js", "blizzard"));
+
+        isp = isp || '(not set)';
+        org = org || '(not set)';
+        var collectorUrl = "https://" + window.location.hostname + "/x0k461";
+        blizzard('newTracker', '348de225-3858-49a4-a829-30ac88187abd', collectorUrl, {
+            appId: 'Q4WebExpediagroup2020corp2',
+            cookieName: '__uxq412__',
+            postPath: '/e6c1b/xc9'
+        });
+
+        blizzard('enableActivityTracking', {
+            minimumVisitLength: 30,
+            heartbeatDelay: 10
+        });
+
+        blizzard('enableLinkClickTracking');
+        blizzard('refreshLinkClickTracking');
+        blizzard('enableFormTracking');
+        blizzard('trackPageView', {
+            context: [{
+                schema: "iglu:com.q4inc/ipapi_geolocation/jsonschema/1-0-0",
+                data: {
+                    isp: isp,
+                    org: org
+                }
+            }]
+        });
+    }
+
+    var trackingCodes = [{qualifier: 'Q4', trackingCode: 'UA-185800075-17'}, {qualifier: 'Client', trackingCode: 'UA-116319459-1'}];
+    var ipSessStorageKey = 'ipApiInfo';
+    var ipJsonStringified = sessionStorage.getItem(ipSessStorageKey);
+
+    if (ipJsonStringified) {
+        try {
+            var ipJsonParsed = JSON.parse(ipJsonStringified);
+            initGaTracking(ipJsonParsed.isp, ipJsonParsed.org);
+            initBlizzard(ipJsonParsed.isp, ipJsonParsed.org);
+        } catch (e) {
+            console.error('Failed to JSON parse IP API session storage data\n', e);
+            initGaTracking();
+            initBlizzard();
+        }
+    } else {
+        $.getJSON('https://pro.ip-api.com/json/?key=xdjZbj0ZiVVozCo&fields=isp,org')
+            .done(function (ipJson) {
+                sessionStorage.setItem(ipSessStorageKey, JSON.stringify(ipJson));
+                initGaTracking(ipJson.isp, ipJson.org);
+                initBlizzard(ipJson.isp, ipJson.org);
+            })
+            .fail(function () {
+                initGaTracking();
+                initBlizzard();
+            });
+    }
+})(jQuery);</script></head>
+
+<body style="margin: 0px" class="BodyBackground no-outline">
+    <input type="hidden" id="__RequestVerificationToken">
+    
+    
+    <div id="pageClass" class="Sectionhome PageDefault PageHome LayoutHomePageLayout Languageen-US page--home">
+        <div class="PageDefaultInner">
+            <div id="litPageDiv" class="PageHome SectionHome ParentSection_home">
+                
+                <form action="default.aspx" method="post" id="fmForm1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['fmForm1'];
+if (!theForm) {
+    theForm = document.fmForm1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+function GetViewType(){ return '2'; }
+function GetRevisionNumber(){ return '1'; }
+function GetLanguageId(){ return '1'; }
+function GetVersionNumber(){ return '5.71.0.1'; }
+function GetPoweredBy(){return 'q4inc';}
+function GetViewDate(){{ return ''; }}
+function GetSignature(){{ return ''; }}
+//]]>
+</script>
+
+                    
+                    
+                    
+<div class="layout layout--home">
+    <div class="layout_inner">
+        <div class="layout_header">
+            <div class="pane pane--header grid--no-gutter" role="navigation">
+                <div class="pane_inner"><span class="HeaderPaneDiv"><span class="HeaderPaneDiv1"><div id="_ctrl0_ctl06_divModuleContainer" class="module module-embed module-skip">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <a class="module-skip_link" href="#maincontent">Skip to main content</a>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv2"><div id="_ctrl0_ctl09_divModuleContainer" class="module module-embed module-logo text-center">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <a href="/home"><img src="//s27.q4cdn.com/708721433/files/design/expedia-group-logo-white.svg" alt="Expedia Group Logo"></a>
+        </div>
+    </div>
+    
+</div></span><span class="HeaderPaneDiv3"><nav class="nav nav--main text-center" aria-label="primary navigation"><ul class="level1">
+	<li class="has-children"><a href="https://www.expediagroup.com/who-we-are/our-story/default.aspx">Who We Are</a></li><li><a href="https://www.expediagroup.com/travel-with-us/default.aspx">Travel With Us</a></li><li><a href="https://www.expediagroup.com/partner-with-us/default.aspx">Partner With Us</a></li><li class="has-children"><a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Investors</a></li><li class="has-children"><a href="https://www.expediagroup.com/media/default.aspx">Media</a></li><li><a href="https://lifeatexpediagroup.com/" target="_blank">Careers</a></li>
+</ul></nav></span><span class="HeaderPaneDiv4"><nav class="nav nav--main nav--main-secondary text-center" aria-label="primary navigation"><ul class="level1">
+	<li class="has-children"><a href="https://www.expediagroup.com/who-we-are/our-story/default.aspx">Who We Are</a><ul class="level2">
+		<li><a href="https://www.expediagroup.com/who-we-are/our-story/default.aspx">Our Story</a></li><li><a href="https://www.expediagroup.com/who-we-are/leadership/default.aspx">Leadership</a></li><li><a href="https://www.expediagroup.com/who-we-are/community-impact/default.aspx">Community Impact</a></li><li><a href="https://www.expediagroup.com/who-we-are/inclusion-and-diversity/default.aspx">Inclusion &amp; Diversity</a></li><li><a href="https://www.expediagroup.com/who-we-are/corporate-standards/default.aspx">Corporate Standards</a></li>
+	</ul></li><li><a href="https://www.expediagroup.com/travel-with-us/default.aspx">Travel With Us</a></li><li><a href="https://www.expediagroup.com/partner-with-us/default.aspx">Partner With Us</a></li><li class="has-children"><a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Investors</a><ul class="level2">
+		<li><a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Investors Overview</a></li><li class="has-children"><a href="https://www.expediagroup.com/investors/news-and-events/financial-releases/default.aspx">News &amp; Events </a><div id="nav_guide1" class="nav_guide"> 1. Use Left/Right arrow keys to allow users to navigate within the navigation links. 2. Use Down arrow key to expand the submenu and up/down arrow keys to navigate within the submenu. 3. Use Enter/Space key to select the menu/submenu items. 4. Use Esc key to leave the submenu. 5. Use Home to select the first item in the menu and End to select the last item in the menu. 6. Use character keys to select the next item having a name that starts with the typed character. </div><ul class="level3">
+			<li role="none"><a href="https://www.expediagroup.com/investors/news-and-events/financial-releases/default.aspx" tabindex="0" aria-describedby="nav_guide1" role="menuitem">Financial Releases</a></li><li role="none"><a href="https://www.expediagroup.com/investors/news-and-events/investor-events/default.aspx" tabindex="-1" aria-describedby="nav_guide1" role="menuitem">Investor Events</a></li>
+		</ul></li><li class="has-children"><a href="https://www.expediagroup.com/investors/financial-information/quarterly-results/default.aspx">Financial Information</a><div id="nav_guide2" class="nav_guide"> 1. Use Left/Right arrow keys to allow users to navigate within the navigation links. 2. Use Down arrow key to expand the submenu and up/down arrow keys to navigate within the submenu. 3. Use Enter/Space key to select the menu/submenu items. 4. Use Esc key to leave the submenu. 5. Use Home to select the first item in the menu and End to select the last item in the menu. 6. Use character keys to select the next item having a name that starts with the typed character. </div><ul class="level3">
+			<li role="none"><a href="https://www.expediagroup.com/investors/financial-information/quarterly-results/default.aspx" tabindex="-1" aria-describedby="nav_guide2" role="menuitem">Quarterly Results</a></li><li role="none"><a href="https://www.expediagroup.com/investors/financial-information/annual-reports/default.aspx" tabindex="-1" aria-describedby="nav_guide2" role="menuitem">Annual Reports and Proxies</a></li><li role="none"><a href="https://www.expediagroup.com/investors/financial-information/sec-filings/default.aspx" tabindex="-1" aria-describedby="nav_guide2" role="menuitem">SEC Filings</a></li>
+		</ul></li><li class="has-children"><a href="https://www.expediagroup.com/investors/stock-information/default.aspx">Stock Information</a><div id="nav_guide3" class="nav_guide"> 1. Use Left/Right arrow keys to allow users to navigate within the navigation links. 2. Use Down arrow key to expand the submenu and up/down arrow keys to navigate within the submenu. 3. Use Enter/Space key to select the menu/submenu items. 4. Use Esc key to leave the submenu. 5. Use Home to select the first item in the menu and End to select the last item in the menu. 6. Use character keys to select the next item having a name that starts with the typed character. </div><ul class="level3">
+			<li role="none"><a href="/investors/stock-information/default.aspx#stock-quote" tabindex="-1" aria-describedby="nav_guide3" role="menuitem">Stock Quote</a></li><li role="none"><a href="/investors/stock-information/default.aspx#stock-chart" tabindex="-1" aria-describedby="nav_guide3" role="menuitem">Stock Chart</a></li><li role="none"><a href="/investors/stock-information/default.aspx#stock-historical" tabindex="-1" aria-describedby="nav_guide3" role="menuitem">Historical Stock Quote</a></li><li role="none"><a href="https://www.expediagroup.com/investors/stock-information/dividend-history/default.aspx" tabindex="-1" aria-describedby="nav_guide3" role="menuitem">Dividend History</a></li><li role="none"><a href="https://www.expediagroup.com/investors/stock-information/analyst-coverage/default.aspx" tabindex="-1" aria-describedby="nav_guide3" role="menuitem">Analyst Coverage</a></li>
+		</ul></li><li class="has-children"><a href="https://www.expediagroup.com/investors/corporate-governance/governance-documents/default.aspx">Corporate Governance</a><div id="nav_guide4" class="nav_guide"> 1. Use Left/Right arrow keys to allow users to navigate within the navigation links. 2. Use Down arrow key to expand the submenu and up/down arrow keys to navigate within the submenu. 3. Use Enter/Space key to select the menu/submenu items. 4. Use Esc key to leave the submenu. 5. Use Home to select the first item in the menu and End to select the last item in the menu. 6. Use character keys to select the next item having a name that starts with the typed character. </div><ul class="level3">
+			<li role="none"><a href="https://www.expediagroup.com/investors/corporate-governance/governance-documents/default.aspx" tabindex="-1" aria-describedby="nav_guide4" role="menuitem">Governance Documents</a></li><li role="none"><a href="https://www.expediagroup.com/who-we-are/leadership/default.aspx" tabindex="-1" aria-describedby="nav_guide4" role="menuitem">Leadership</a></li><li role="none"><a href="https://www.expediagroup.com/investors/corporate-governance/committee-composition/default.aspx" tabindex="-1" aria-describedby="nav_guide4" role="menuitem">Committee Composition</a></li><li role="none"><a href="https://www.expediagroup.com/investors/corporate-governance/contact-the-board/default.aspx" tabindex="-1" aria-describedby="nav_guide4" role="menuitem">Contact the Board</a></li>
+		</ul></li><li class="has-children"><a href="https://www.expediagroup.com/investors/resources/investor-faqs/default.aspx">Resources</a><div id="nav_guide5" class="nav_guide"> 1. Use Left/Right arrow keys to allow users to navigate within the navigation links. 2. Use Down arrow key to expand the submenu and up/down arrow keys to navigate within the submenu. 3. Use Enter/Space key to select the menu/submenu items. 4. Use Esc key to leave the submenu. 5. Use Home to select the first item in the menu and End to select the last item in the menu. 6. Use character keys to select the next item having a name that starts with the typed character. </div><ul class="level3">
+			<li role="none"><a href="https://www.expediagroup.com/investors/resources/investor-faqs/default.aspx" tabindex="-1" aria-describedby="nav_guide5" role="menuitem">Investor FAQs</a></li><li role="none"><a href="https://www.expediagroup.com/investors/resources/us-irc-section-6045B-reporting/default.aspx" tabindex="-1" aria-describedby="nav_guide5" role="menuitem">U.S. IRC Section 6045B Reporting</a></li><li role="none"><a href="https://www.expediagroup.com/investors/resources/contact-investor-relations/default.aspx" tabindex="-1" aria-describedby="nav_guide5" role="menuitem">Contact Investor Relations</a></li><li role="none"><a href="https://www.expediagroup.com/investors/resources/Expedia-Stockholders-Litigation/default.aspx" tabindex="-1" aria-describedby="nav_guide5" role="menuitem">Expedia Stockholders Litigation</a></li>
+		</ul></li>
+	</ul></li><li class="has-children"><a href="https://www.expediagroup.com/media/default.aspx">Media</a><ul class="level2">
+		<li><a href="https://www.expediagroup.com/media/subscribe-to-the-news/default.aspx">Subscribe to the News</a></li><li><a href="https://brand.expediagroup.com/" target="_blank">Brand Guidelines</a></li><li><a href="https://www.expediagroup.com/who-we-are/leadership/default.aspx">Leadership</a></li><li><a href="/who-we-are/our-story/default.aspx">Expedia Group at a Glance</a></li>
+	</ul></li><li><a href="https://lifeatexpediagroup.com/" target="_blank">Careers</a></li>
+</ul></nav></span><span class="HeaderPaneDiv5"><div id="_ctrl0_ctl18_divModuleContainer" class="module module-embed layout_toggle">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <i class="q4-icon_menu" tabindex="0" aria-expanded="false"></i>
+        </div>
+    </div>
+</div></span></span></div>
+            </div>
+            <div class="pane pane--banner grid--no-gutter">
+                <div class="pane_inner"><span class="HeaderPane2Div1"><div id="_ctrl0_ctl42_divModuleContainer" class="module module-embed module-banner-video">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <video autoplay="" muted="" loop="" id="myVideo">
+  <source src="//s27.q4cdn.com/708721433/files/videos/home-bg-final.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+        </div>
+    </div>
+</div></span></div>
+            </div>
+            <div class="pane pane--navigation">
+                <div class="pane_inner"><span class="NavigationPaneDiv6"><div id="_ctrl0_ctl21_divModuleContainer" class="module module-html layout_toggle">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <i class="q4-icon_cross" tabindex="0" aria-expanded="false"></i>
+        </div>
+    </div>
+</div></span><span class="NavigationPaneDiv7"><nav class="nav nav--secondary dark" aria-label="secondary navigation"><ul class="level1">
+	<li class="has-children"><a href="https://www.expediagroup.com/who-we-are/our-story/default.aspx">Who We Are</a><ul class="level2">
+		<li><a href="https://www.expediagroup.com/who-we-are/our-story/default.aspx">Our Story</a></li><li><a href="https://www.expediagroup.com/who-we-are/leadership/default.aspx">Leadership</a></li><li><a href="https://www.expediagroup.com/who-we-are/community-impact/default.aspx">Community Impact</a></li><li><a href="https://www.expediagroup.com/who-we-are/inclusion-and-diversity/default.aspx">Inclusion &amp; Diversity</a></li><li><a href="https://www.expediagroup.com/who-we-are/corporate-standards/default.aspx">Corporate Standards</a></li>
+	</ul></li><li><a href="https://www.expediagroup.com/travel-with-us/default.aspx">Travel With Us</a></li><li><a href="https://www.expediagroup.com/partner-with-us/default.aspx">Partner With Us</a></li><li class="has-children"><a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Investors</a><ul class="level2">
+		<li><a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Investors Overview</a></li><li class="has-children"><a href="https://www.expediagroup.com/investors/news-and-events/financial-releases/default.aspx">News &amp; Events </a><ul class="level3">
+			<li><a href="https://www.expediagroup.com/investors/news-and-events/financial-releases/default.aspx">Financial Releases</a></li><li><a href="https://www.expediagroup.com/investors/news-and-events/investor-events/default.aspx">Investor Events</a></li>
+		</ul></li><li class="has-children"><a href="https://www.expediagroup.com/investors/financial-information/quarterly-results/default.aspx">Financial Information</a><ul class="level3">
+			<li><a href="https://www.expediagroup.com/investors/financial-information/quarterly-results/default.aspx">Quarterly Results</a></li><li><a href="https://www.expediagroup.com/investors/financial-information/annual-reports/default.aspx">Annual Reports and Proxies</a></li><li><a href="https://www.expediagroup.com/investors/financial-information/sec-filings/default.aspx">SEC Filings</a></li>
+		</ul></li><li class="has-children"><a href="https://www.expediagroup.com/investors/stock-information/default.aspx">Stock Information</a><ul class="level3">
+			<li><a href="/investors/stock-information/default.aspx#stock-quote">Stock Quote</a></li><li><a href="/investors/stock-information/default.aspx#stock-chart">Stock Chart</a></li><li><a href="/investors/stock-information/default.aspx#stock-historical">Historical Stock Quote</a></li><li><a href="https://www.expediagroup.com/investors/stock-information/dividend-history/default.aspx">Dividend History</a></li><li><a href="https://www.expediagroup.com/investors/stock-information/analyst-coverage/default.aspx">Analyst Coverage</a></li>
+		</ul></li><li class="has-children"><a href="https://www.expediagroup.com/investors/corporate-governance/governance-documents/default.aspx">Corporate Governance</a><ul class="level3">
+			<li><a href="https://www.expediagroup.com/investors/corporate-governance/governance-documents/default.aspx">Governance Documents</a></li><li><a href="https://www.expediagroup.com/who-we-are/leadership/default.aspx">Leadership</a></li><li><a href="https://www.expediagroup.com/investors/corporate-governance/committee-composition/default.aspx">Committee Composition</a></li><li><a href="https://www.expediagroup.com/investors/corporate-governance/contact-the-board/default.aspx">Contact the Board</a></li>
+		</ul></li><li class="has-children"><a href="https://www.expediagroup.com/investors/resources/investor-faqs/default.aspx">Resources</a><ul class="level3">
+			<li><a href="https://www.expediagroup.com/investors/resources/investor-faqs/default.aspx">Investor FAQs</a></li><li><a href="https://www.expediagroup.com/investors/resources/us-irc-section-6045B-reporting/default.aspx">U.S. IRC Section 6045B Reporting</a></li><li><a href="https://www.expediagroup.com/investors/resources/contact-investor-relations/default.aspx">Contact Investor Relations</a></li><li><a href="https://www.expediagroup.com/investors/resources/Expedia-Stockholders-Litigation/default.aspx">Expedia Stockholders Litigation</a></li>
+		</ul></li>
+	</ul></li><li class="has-children"><a href="https://www.expediagroup.com/media/default.aspx">Media</a><ul class="level2">
+		<li><a href="https://www.expediagroup.com/media/subscribe-to-the-news/default.aspx">Subscribe to the News</a></li><li><a href="https://brand.expediagroup.com/" target="_blank">Brand Guidelines</a></li><li><a href="https://www.expediagroup.com/who-we-are/leadership/default.aspx">Leadership</a></li><li><a href="/who-we-are/our-story/default.aspx">Expedia Group at a Glance</a></li>
+	</ul></li><li><a href="https://lifeatexpediagroup.com/" target="_blank">Careers</a></li>
+</ul></nav></span></div>
+            </div>
+        </div>
+        <div class="layout_content" id="maincontent" role="main">
+            <div class="pane pane--breadcrumb">
+                <div class="pane_inner"></div>
+            </div>
+            <div class="pane pane--left">
+                <div class="pane_inner"><span class="LeftPaneDiv"></span></div>
+            </div>
+            <div class="pane pane--content">
+                <div class="pane_inner"><span class="ContentPaneDiv"><span class="ContentPaneDiv2"><div id="_ctrl0_ctl45_divModuleContainer" class="module module-html module-travel-partner text-center">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="grid">
+    <div class="grid_col grid_col--1-of-2 grid_col--md-1-of-1 module module--no-padding-top">
+        <div class="grid_col-wrap">
+            <img src="//s27.q4cdn.com/708721433/files/images/2020/home-travel-with-us.png" alt="">
+            <p><a class="h3" href="/travel-with-us/default.aspx">Travel With Us <i class="q4-icon_ticker_arrow"></i></a>
+            </p>
+            <p>No matter who you are, or where you are going, our travel brands help every type of traveler not only
+                find the trip that’s right for them, but get the best value every time.</p>
+        </div>
+    </div>
+    <div class="grid_col grid_col--1-of-2 grid_col--md-1-of-1 module module--no-padding-top">
+        <div class="grid_col-wrap">
+            <img src="//s27.q4cdn.com/708721433/files/images/2020/home-partner-with-us.png" alt="">
+            <p><a class="h3" href="/partner-with-us/default.aspx">Partner With Us <i class="q4-icon_ticker_arrow"></i></a></p>
+            <p>We connect partners big and small to the universe of travelers, giving access to data, tools and
+                technology that empowers, maximizes potential and builds their business.</p>
+        </div>
+    </div>
+</div>
+<div class="module module--no-padding">
+    <div class="grid module_logo-tiles">
+        <div class="grid_col grid_col--1-of-4">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/image-(10).png" alt="Expedia Logo">
+        </div>
+        <div class="grid_col grid_col--1-of-4">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/hotels.png" alt="Hotels.com Logo">
+        </div>
+        <div class="grid_col grid_col--1-of-4">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/vrbo.png" alt="VRBO">
+        </div>
+        <div class="grid_col grid_col--1-of-4">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/travelocity.png" alt="travelocity">
+        </div>
+        <!-- new row -->
+        <!-- <div class="grid_col grid_col--1-of-5">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/egencia.png" alt="egencia Logo">
+        </div> -->
+        <div class="grid_col grid_col--1-of-5">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/hotwire.png" alt="hotwire Logo">
+        </div>
+        <div class="grid_col grid_col--1-of-5">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/orbitz.png" alt="orbitz logo">
+        </div>
+        <div class="grid_col grid_col--1-of-5">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/ebookers.png" alt="ebookers logo">
+        </div>
+        <div class="grid_col grid_col--1-of-5">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/cheap-tickets.png" alt="cheap tickets Logo">
+        </div>
+        <!-- new row -->
+        <div class="grid_col grid_col--1-of-4">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/car-rentals.png" alt="Expedia Logo">
+        </div>
+        <div class="grid_col grid_col--1-of-4">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/expedia-cruises.png" alt="Hotels.com Logo">
+        </div>
+        <div class="grid_col grid_col--1-of-4">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/wot-if.png" alt="VRBO">
+        </div>
+        <div class="grid_col grid_col--1-of-4">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/trivago.png" alt="travelocity">
+        </div>
+        <!-- new row -->
+        <div class="grid_col grid_col--1-of-4">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/expedia-media-1.png" alt="VRBO">
+        </div>
+        <div class="grid_col grid_col--1-of-4">
+            <img src="//s27.q4cdn.com/708721433/files/images/new-logos/expedia-partner-1.png" alt="travelocity">
+        </div>
+    </div>
+    <span class="sr-only">expedia, hotels.com, vrbo, travelocity, egencia, hotwire, orbitz, ebookers, cheaptickets,
+        carrentals, expedia cruises, wotif, trivago</span>
+</div><br><style></style>
+        </div>
+    </div>
+</div></span><span class="ContentPaneDiv3"><div id="_ctrl0_ctl48_divModuleContainer" class="module module-embed module-home-slider background--brand dark text-center module--no-padding">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="module_container module_container--content"><div class="module_container module_container--slider slick-initialized slick-slider slick-dotted" aria-live="polite"><button class="slick-prev slick-arrow slick-disabled" aria-label="Previous Slide" type="button" aria-disabled="true" style="" disabled=""><span class="sr-only">Previous Slide</span></button><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 3492px;"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1164px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" id="slick-slide00"><div><div class="module_item grid--no-gutter" style="width: 100%; display: inline-block;"><div class="grid_col grid_col--1-of-4 grid_col--md-1-of-1 vmiddle"><img src="https://s27.q4cdn.com/708721433/files/images/2020/home-slider-1.png" alt=""></div><div class="grid_col grid_col--2-of-4 grid_col--md-1-of-1 vmiddle"><div class="grid_col-inner"><p class="size--18">The Expedia Group platform makes over 600 billion AI predictions a year</p><p class="size--18"><a href="https://expediagroup2020corp2.q4web.com/who-we-are/our-story/default.aspx#module-tabs_item--1" tabindex="0"><strong>Learn More</strong></a></p></div></div><div class="grid_col grid_col--1-of-4 grid_col--md-1-of-1 vmiddle"></div></div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1164px; position: relative; left: -1164px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1" id="slick-slide01"><div><div class="module_item grid--no-gutter" style="width: 100%; display: inline-block;"><div class="grid_col grid_col--1-of-4 grid_col--md-1-of-1 vmiddle"><img src="https://s27.q4cdn.com/708721433/files/images/2020/home-slider-2.png" alt=""></div><div class="grid_col grid_col--2-of-4 grid_col--md-1-of-1 vmiddle"><div class="grid_col-inner"><p class="size--18">Expedia Group has 200+ websites in 70+ countries.</p><p class="size--18"><a href="https://expediagroup2020corp2.q4web.com/who-we-are/our-story/default.aspx#module-tabs_item--1" tabindex="-1"><strong>Learn More</strong></a></p></div></div><div class="grid_col grid_col--1-of-4 grid_col--md-1-of-1 vmiddle"></div></div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 1164px; position: relative; left: -2328px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1" id="slick-slide02"><div><div class="module_item grid--no-gutter" style="width: 100%; display: inline-block;"><div class="grid_col grid_col--1-of-4 grid_col--md-1-of-1 vmiddle"><img src="https://s27.q4cdn.com/708721433/files/images/2020/home-slider-3.png" alt=""></div><div class="grid_col grid_col--2-of-4 grid_col--md-1-of-1 vmiddle"><div class="grid_col-inner"><p class="size--18">The Expedia Group Conversations Platform hosts over 20 million virtual conversations annually.</p><p class="size--18"><a href="https://expediagroup2020corp2.q4web.com/who-we-are/our-story/default.aspx#module-tabs_item--1" tabindex="-1"><strong>Learn More</strong></a></p></div></div><div class="grid_col grid_col--1-of-4 grid_col--md-1-of-1 vmiddle"></div></div></div></div></div></div><button class="slick-next slick-arrow" aria-label="Next Slide" type="button" style="" aria-disabled="false"><span class="sr-only">Next Slide</span></button><ul class="slick-dots" style=""><li class="slick-active"><button type="button" id="slick-slide-control00" aria-label="Slide 1 of 3"><span class="sr-only">Slide 1</span></button></li><li><button type="button" id="slick-slide-control01" aria-label="Slide 2 of 3"><span class="sr-only">Slide 2</span></button></li><li><button type="button" id="slick-slide-control02" aria-label="Slide 3 of 3"><span class="sr-only">Slide 3</span></button></li></ul></div></div>
+<script>
+$('.module-home-slider .module_container--content').downloads({
+    downloadType: 'Home slider',
+    showAllYears: true,
+    fetchAllYears: true,
+    append: false,
+    template: (
+        /*start beautify preserve*/
+        '<div class="module_container module_container--slider" aria-live="polite">'+
+            '{{#items}}' +
+                '<div class="module_item grid--no-gutter">' + 
+                    '<div class="grid_col grid_col--1-of-4 grid_col--md-1-of-1 vmiddle">' +
+                        '<img src="{{thumb}}" alt="">' +
+                    '</div>' +
+                    '<div class="grid_col grid_col--2-of-4 grid_col--md-1-of-1 vmiddle">' +
+                        '<div class="grid_col-inner">' +
+                            '<p class="size--18">{{{description}}}</p>' +
+                            '<p class="size--18"><a href="{{url}}" {{#blank}} target="_blank" {{/blank}}>' +
+                                '<strong>Learn More</strong>' +
+                                '{{#blank}}<span class="sr-only">(opens in new window)</span>{{/blank}}' +
+                            '</a></p>' +
+                        '</div>' +
+                    '</div>' +
+                    '<div class="grid_col grid_col--1-of-4 grid_col--md-1-of-1 vmiddle">' +
+                    '</div>' +
+                '</div>' +
+            '{{/items}}' +
+        '</div>' 
+        /*end beautify preserve*/
+    ),
+    beforeRender: function (e, tplData) {
+        $.each(tplData.items, function(idx, item) {
+            var url = item.url.toLowerCase();
+            if (url.indexOf('aspx') == -1) {
+                item.blank = true;
+            }
+        });
+    },
+    complete: function (e) {
+        $(e.target).find('.module_container--slider').slick({
+            dots: true,
+            arrows: true,
+            infinite: false,
+            fade: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    }
+});
+</script>
+        </div>
+    </div>
+</div></span><span class="ContentPaneDiv4"><div id="_ctrl0_ctl51_divModuleContainer" class="module module-embed module-home-cta text-center">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="module_container module_container--content"><div class="grid"><div class="module_item grid_col grid_col--1-of-3 grid_col--md-1-of-1"><img src="https://s27.q4cdn.com/708721433/files/images/2020/home-cta-1.png" alt=""><h3 class="no-margin">Investors</h3><p>Looking for financial information?<br>
+Everything you need to know about EXPE.</p><a href="/investors/default.aspx"><i class="q4-icon_ticker_arrow"></i> <span class="sr-only">Read More About Investors</span></a></div><div class="module_item grid_col grid_col--1-of-3 grid_col--md-1-of-1"><img src="https://s27.q4cdn.com/708721433/files/images/2020/home-cta-2.png" alt=""><h3 class="no-margin">Media</h3><p>Want the scoop? <br>
+Check out the latest news and brand resources from Expedia Group.</p><a href="/media/default.aspx"><i class="q4-icon_ticker_arrow"></i> <span class="sr-only">Read More About Media</span></a></div><div class="module_item grid_col grid_col--1-of-3 grid_col--md-1-of-1"><img src="https://s27.q4cdn.com/708721433/files/images/2020/home-cta-3.png" alt=""><h3 class="no-margin">Careers</h3><p>Ready to change the world?<br>
+Help us rewrite the rules of travel by joining the Expedia Group family.</p><a href="/careers/default.aspx"><i class="q4-icon_ticker_arrow"></i> <span class="sr-only">Read More About Careers</span></a></div></div></div>
+<script>
+$('.module-home-cta .module_container--content').downloads({
+    downloadType: 'Home cta',
+    showAllYears: true,
+    fetchAllYears: true,
+    append: false,
+    template: (
+        /*start beautify preserve*/
+        '<div class="grid">'+
+            '{{#items}}' +
+                '<div class="module_item grid_col grid_col--1-of-3 grid_col--md-1-of-1">' + 
+                    '<img src="{{thumb}}" alt="">' +
+                    '<h3 class="no-margin">{{title}}</h3>'+   
+                    '<p>{{{description}}}</p>' +
+                    '<a href="{{url}}" {{#blank}} target="_blank" {{/blank}}>' +
+                        '<i class="q4-icon_ticker_arrow"></i> <span class="sr-only">Read More About {{title}}</span>' +
+                        '{{#blank}}<span class="sr-only">(opens in new window)</span>{{/blank}}' +
+                    '</a>' +
+                '</div>' +
+            '{{/items}}' +
+        '</div>' 
+        /*end beautify preserve*/
+    ),
+    beforeRender: function (e, tplData) {
+        $.each(tplData.items, function(idx, item) {
+            var url = item.url.toLowerCase();
+            if (url.indexOf('aspx') == -1) {
+                item.blank = true;
+            }
+        });
+    }
+});
+</script>
+        </div>
+    </div>
+</div></span></span></div>
+            </div>
+            <div class="pane pane--right">
+                <div class="pane_inner"><span class="RightPaneDiv"></span></div>
+            </div>
+            <div class="pane pane--footer grid--no-gutter">
+                <div class="pane_inner"><span class="FooterPaneDiv"></span></div>
+            </div>
+        </div>
+        <div class="layout_footer" role="contentinfo">
+            <div class="pane pane--footer2">
+                <div class="pane_inner"><span class="FooterPane2Div10"><div id="_ctrl0_ctl27_divModuleContainer" class="module module-html module-logo text-center">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <a href="/"><img src="//s27.q4cdn.com/708721433/files/design/e-logo.svg" alt="Expedia Group Logo"></a>
+        </div>
+    </div>
+</div></span><span class="FooterPane2Div11"><nav class="nav nav--footer dark text-center"><ul class="level1">
+	<li class="has-children"><a href="https://www.expediagroup.com/who-we-are/our-story/default.aspx">Who We Are</a></li><li><a href="https://www.expediagroup.com/travel-with-us/default.aspx">Travel With Us</a></li><li><a href="https://www.expediagroup.com/partner-with-us/default.aspx">Partner With Us</a></li><li class="has-children"><a href="https://www.expediagroup.com/investors/investors-overview/default.aspx">Investors</a></li><li class="has-children"><a href="https://www.expediagroup.com/media/default.aspx">Media</a></li><li><a href="https://lifeatexpediagroup.com/" target="_blank">Careers</a></li>
+</ul></nav></span><span class="FooterPane2Div12"><div id="_ctrl0_ctl33_divModuleContainer" class="module module-html copyright text-center dark">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <p>© <span class="copyright_year">2022</span> Expedia, Inc., an Expedia Group company. All rights reserved. Expedia, Expedia Group,
+<br> and the Expedia E Logo are trademarks or registered trademarks of Expedia, Inc.
+<br> All other trademarks are property of their respective owners.</p>
+        </div>
+    </div>
+</div></span><span class="FooterPane2Div13"><div id="_ctrl0_ctl36_RightBlock" class="hidden"></div>
+<div id="_ctrl0_ctl36_divModuleContainer" class="module module-links module-llinks list--reset text-center dark">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <ul id="_ctrl0_ctl36_qlList" class="module-links_list">
+                
+                        <li id="_ctrl0_ctl36_QuickLinkList_ctl00_liQuickLink" class="QuickLinkRow">
+                            
+                            
+                            <a href="https://www.expediagroup.com/terms-of-use/default.aspx" id="_ctrl0_ctl36_QuickLinkList_ctl00_link" class="module-links_list-item-link" target="_self">Terms of Use</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl36_QuickLinkList_ctl01_liQuickLink" class="QuickLinkRowAlt">
+                            
+                            
+                            <a href="https://www.expediagroup.com/privacy-policy/default.aspx" id="_ctrl0_ctl36_QuickLinkList_ctl01_link" class="module-links_list-item-link" target="_self">Privacy</a>
+                            
+                        </li>
+                    
+            </ul>
+        </div>
+    </div>
+</div></span></div>
+            </div>
+            <div class="pane pane--credits">
+                <div class="pane_inner"><span class="Q4FooterDiv14"><div id="_ctrl0_ctl39_divModuleContainer" class="module module-embed">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <script>
+if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = Array.prototype.forEach;
+}
+var q4App = $.extend(true, q4Defaults, {
+    options: {
+        mailingListConfig: {
+            tpl: (
+                '<div id="SubscriberConfirmation" class="module module-subscribe module-subscribe--fancy grid_col  grid_col--3-of-4 grid_col--md-1-of-1">' +
+                '   <div class="module_container--outer">' +
+                '       <h2 class="module_title">Email Alerts</h2>' +
+                '       <div class="module_container--inner">' +
+                '           <p class="module_message module_message--success"></p>' +
+                '       </div>' +
+                '   </div>' +
+                '</div>'
+            ),
+            location: '.pane--footer',
+            submitText: 'Sign Up'
+        }
+    },
+    scrollingTable: function(selector) {
+        $(selector).not(selector + ' table').wrap('<div class="table-wrapper" />');
+    },
+    iconFix: function() {
+        $('.q4icons .module_link').each(function() {
+            if (!$(this).children('.q4icons_icon').length) {
+                $(this).prepend('<span class="q4icons_icon" aria-hidden="true"></span>');
+            }
+        });
+    },
+    navAccessibility: function() {
+        $('nav .selected > a').attr('aria-current', 'page');
+        $('.nav--main').attr('aria-label', 'primary navigation');
+        $('.nav--secondary').attr('aria-label', 'secondary navigation');
+    },
+    viewportCheck: function() {
+        $.fn.isInViewport = function() {
+            var elementTop = $(this).offset().top;
+            var elementBottom = elementTop + $(this).outerHeight();
+            var viewportTop = $(window).scrollTop();
+            var viewportBottom = viewportTop + $(window).height();
+            return elementBottom > viewportTop && elementTop < viewportBottom;
+        };
+        $(window).on('load resize scroll', function() {
+            $('.animate').each(function() {
+                if ($(this).isInViewport()) {
+                    $(this).addClass('js--animate');
+                } //else {
+                //$(this).removeClass('js--animate');
+                //}
+            });
+        });
+    },
+    /*BH #149*/
+    navHover: function($nav) {
+        $nav.find('.level1 > li').hover(function() {
+            $(this).siblings('.selected').toggleClass('js--no-hover');
+            $(this).siblings('.expanded').toggleClass('js--no-hover');
+        });
+    },
+    navHoverSecondary: function($nav, $navSec) {
+        var defaultSelected = $nav.find('.level1 > .selected');
+        var defaultExpanded = $navSec.find('.level1 > li.has-children.expanded');
+        $nav.find('.level1 > li.has-children').on('mouseover', function() {
+        defaultSelected.removeClass('selected');
+        defaultExpanded.removeClass('expanded');
+        var linkAddr= $(this).find('a').attr('href');
+        var targetLink = $navSec.find('[href="'+linkAddr+'"]');
+        targetLink.parent().addClass('selected');
+        targetLink.next('ul').addClass('expanded');
+        });
+        
+        $nav.find('.level1 > li.has-children').on('mouseout', function() {
+        var linkAddr= $(this).find('a').attr('href');
+        var targetLink = $navSec.find('[href="'+linkAddr+'"]');
+        targetLink.parent().removeClass('expanded');
+        targetLink.parent().removeClass('selected');
+        targetLink.next('ul').removeClass('expanded');
+        defaultSelected.addClass('selected');
+        defaultExpanded.addClass('expanded');
+        });
+    },
+    removeFocus: {
+        init: function () {
+            this.initKeyboardFocus = this.initKeyboardFocus.bind(this);
+            this.addBodyClass = this.addBodyClass.bind(this);
+            this.removeBodyClass = this.removeBodyClass.bind(this);
+        },
+        addBodyClass: function () {
+            if (!document.body.classList.contains('no-outline')) {
+                document.body.classList.add('no-outline');
+
+                // manage event listeners
+                document.body.removeEventListener('mousedown', this.addBodyClass);
+                document.body.addEventListener('keydown', this.removeBodyClass);
+            }
+        },
+        removeBodyClass: function () {
+            if (document.body.classList.contains('no-outline')) {
+                document.body.classList.remove('no-outline');
+
+                // manage event listeners
+                document.body.removeEventListener('keydown', this.removeBodyClass);
+                document.body.addEventListener('mousedown', this.addBodyClass);
+            }
+        },
+        initKeyboardFocus: function () {
+            if (typeof document !== 'undefined') {
+                this.addBodyClass();
+            }
+        }
+    },
+    init: function() {
+        var app = this;
+
+        app.cleanUp();
+        app.submitOnEnter('.module-unsubscribe');
+        app.submitOnEnter('.module-search');
+        app.validateSubmit('.module-search');
+    //    app.superfish($('.nav--secondary:not(.nav--media) .level1'), { cssArrows: false });
+        app.mobileMenuToggle($('.layout'), '.pane--navigation', '.layout_toggle i');
+        app.cleanQuickLinks($('.module-links'));
+        app.copyright($('.copyright_year'));
+        app.docTracking();
+        app.fancySignup();
+        app.resetDate(['.nav a[href*="s4.q4web.com"]:not([href$=".pdf"])']);
+        app.previewToolbar();
+        app.sections();
+        app.contrast.init();
+        app.iconFix();
+        app.viewportCheck();
+        app.navAccessibility();
+        app.accessibleNavKeyboard('.nav--main .level3', '3', '.nav--mobile');
+        app.navHover($('.nav--main'));
+        app.navHoverSecondary( $('.nav--main'), $('.nav--main-secondary') );
+        
+        app.removeFocus.init();
+        app.removeFocus.initKeyboardFocus();
+        app.removeFocus.addBodyClass();
+        app.removeFocus.removeBodyClass();
+    }
+});
+
+q4App.init();
+</script>
+        </div>
+    </div>
+</div></span><span class="Q4FooterDiv5"><div id="_ctrl0_ctl54_divModuleContainer" class="module module-embed">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <script>
+    $('.module-travel-partner .grid_col-wrap').find('a').mouseover(function() {
+        $(this).closest('.grid_col-wrap').toggleClass('js--hover');
+    });  
+    $('.module-travel-partner .grid_col-wrap').find('a').mouseout(function() {
+         $(this).closest('.grid_col-wrap').removeClass('js--hover');
+    });                                    
+</script>
+        </div>
+    </div>
+</div></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <input type="hidden" name="__antiCSRF" id="__antiCSRF" value="">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="/js/anti-csrf.js">
+    </script>
+
+
+</body>
