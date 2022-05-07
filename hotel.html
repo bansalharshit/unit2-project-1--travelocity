@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://www.travelocity.com/_dms/interstitial/logo.svg?locale=en_US&siteid=80001" type="image/x-icon">
+    <title>Hotels</title>
+    <style>
+      *{
+        margin: 0%;
+        padding: 0%;
+      }
+      select {
+        height: 40px;
+        width: 300px;
+        border-radius: 7px;
+        border-color: blue;
+        color: gray;
+        font-size: 17px;
+        margin-bottom: 35px;
+        color: black;
+      }
+      #hoteldetail{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          grid-template-rows: repeat(8,auto);
+          grid-gap: 10px;
+      }
+      #don{
+        width: 610px;
+        height: 300px;
+        border-radius: 20px;
+        margin-left: 9px;
+      }
+      #hoteldetail>div{
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; 
+          border-radius: 20px;
+          margin-top: 30px;   
+    }
+    #hoteldetail>h1,h2,h3,p{
+        text-align: center;
+    }
+
+    #hoteldetail button{
+        transform: translateX(250px);
+        padding: 10px 20px 10px 20px ;
+        margin: 10px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px orchid;
+    }
+    #hoteldetail button:hover{
+        background-color: blueviolet;
+    }
+
+    #hoteldetail h2{
+        color: rgb(200, 77, 228);
+    }
+    #hoteldetail p{
+        color: green;
+    }
+   #har{
+     margin-top: 20px;
+       width: 100%;
+       height: 50px;
+       background-color: #0000fd ;
+       display: flex;
+       justify-content: space-around;
+       padding: 5px;
+       box-sizing: border-box;
+   }
+   #pro1{
+     background-color: black;
+     box-shadow: 2px 2px 4px white;
+   }
+   #pro1:hover{
+     color: white;
+   }
+   #pro2{
+     background-color: black;
+     box-shadow: 2px 2px 4px white;
+   }
+   #pro2:hover{
+     color: white;
+   }
+   
+    </style>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="one" style="padding: 0%">
+      <div id="two" class="boy">
+        <div>
+          <a href="index.html"
+            ><img
+              src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&siteid=80001&2"
+              alt="logo"
+          /></a>
+        </div>
+        <div>
+          <a href="index.html"><img src="" alt="" /></a>
+        </div>
+      </div>
+      <div id="three" class="roy">
+        <select name="" id="four">
+          <option value="none" id="a"><a href="#">More travel</a></option>
+          <option value="packages" id="a"><a href="#">Bags</a></option>
+          <option value="stays" id="a"><a href="#">Stays</a></option>
+          <option value="cars" id="a"><a href="#">Cars</a></option>
+          <option value="flights" id="a"><a href="#">Flights</a></option>
+        </select>
+      </div>
+      <div id="all" style="margin-top: 25px;padding-left: 30px;">
+        <div id="five">
+          <div><a href="abou.html">About-Us</a></div>
+        </div>
+        <div id="six">
+          <div><a href="hotel.html">Trips & Hotels</a></div>
+        </div>
+        <div id="seven">
+          <div><a href="reserve.html">Bookings</a></div>
+        </div>
+        <div id="eight">
+          <div><a href="signin.html">Sign-in</a></div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="pro">
+
+    </div>
+    
+    <div id="har">
+
+        <select name="" id="pro1" onchange="bollo()">
+            <option value="none">Choose-Pice</option>
+            <option value="assen">Low-price</option>
+            <option value="desen">Hign-price</option>
+        </select>
+
+        <select name="" id="pro2" onchange="challo()">
+            <option value="none">Choose-Rating</option>
+            <option value="asse">Low-rating</option>
+            <option value="dese">Hign-rating</option>
+        </select>
+    </div>  
+    <div id="hoteldetail">
+
+    </div>
+  </body>
+</html>
+<script src="hotel.js"></script>
