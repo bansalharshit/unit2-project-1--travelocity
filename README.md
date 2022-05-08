@@ -7,6 +7,7 @@ Travelocity.com is a leading online travel Web site where travelers can make air
 
 ![Screenshot (36)](https://user-images.githubusercontent.com/101393035/167268029-d5bd22d9-7a32-417a-a48a-554a70605d98.png)
 # Let's Deep Dive into our Website
+Home page of website.
 ![Screenshot (39)](https://user-images.githubusercontent.com/101393035/167268066-c6eb30a3-c1b5-4098-8a21-91f3798340f2.png)
 # Most crucial parts of any website
 1.create an account/signup page
